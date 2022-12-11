@@ -1,0 +1,3 @@
+include ':ClientCoreLib'
+include ':app'
+rootProject.name = "Wearable"

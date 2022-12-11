@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activities.LoginActivity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_boxedEdges="left|right|top">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:src="@drawable/surething"/>
+
+        <EditText
+            android:id="@+id/editText_name_login"
+            android:layout_width="178dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="-35dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:inputType="textPersonName"
+            android:hint="@string/name_hint" />
+
+        <EditText
+            android:id="@+id/editText_password_login"
+            android:layout_width="178dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="0dp"
+            android:textSize="12dp"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="77dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="33dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EC2444"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btn_registerHere"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="6dp"
+            android:backgroundTint="#EC2444"
+            android:text="Register Here"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="8sp"
+            />
+
+        <TextView
+            android:id="@+id/textView_errorLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="30dp"
+            android:text="Wrong credentials"
+            android:textColor="#EC2424"
+            android:textSize="10sp"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>

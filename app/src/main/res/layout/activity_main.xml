@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".activities.ScanActivity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_boxedEdges="bottom|top">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:src="@drawable/surething"/>
+
+        <TextView
+            android:id="@+id/txtview_surepresence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="35dp"
+            android:text="SurePresence"
+            android:textColor="#EC2444"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_kiosk"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="22dp"
+            android:background="@drawable/round_button_kiosk"
+            android:drawableTop="@drawable/kiosk"
+            android:drawablePadding="4dip"
+            android:gravity="center_horizontal"
+            android:paddingTop="12dp"
+            android:text="Kiosk"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/round_button_profile"
+            android:drawableTop="@drawable/profile"
+            android:drawablePadding="-13dip"
+            android:paddingTop="15dp"
+            android:text="Profile"
+            android:textColor="#000000" />
+
+    </FrameLayout>
+
+</androidx.wear.widget.BoxInsetLayout>
